@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Strahler Garten
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "kuni"
+  },
+  "headline": "Strahler Garten",
+  "datePublished": "2021-03-22",
+  "image": "https://i.pinimg.com/originals/31/bf/46/31bf46dd9547080e016553c728585230.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Garten Dekor",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=strahler+garten",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Strahler Garten
+            </a>
+        </h1>
+        <p>
+                            Meine Webseite präsentiert eine reiche Aswahl von Inneneinrichtungen, modernen Häusern und Gebäuden, sowie die aktuellsten Ideen für interessante und festliche Wohndekoration.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '9842eab235f29e055f0637b3106c62c0',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://dadsimz.com/9842eab235f29e055f0637b3106c62c0/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Strahler Garten</strong>. EEK A Versand. LED Fluter 50W Strahler Scheinwerfer Baustrahler GartenAußenleuchte IP66 DE DHL.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/65/d1/0e/65d10e09193f9efabc1203410d6a49a4.jpg" alt="Baume Und Straucher Mit Licht In Szene Setzen Strahler Aussenbeleuchtung Aussenleuchten" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeOruMzeWIWuA_RhWee1mksCMh8oGgJ-0Dw';">
+        <figcaption>Baume Und Straucher Mit Licht In Szene Setzen Strahler Aussenbeleuchtung Aussenleuchten from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Solar Strahler CLY Solarlampe Außen 60 Verbesserte LED für Hohe Helligkeit 4000mAh Batterie Solarpanel Licht Gesteuert IP66 Wasserdicht Solarbetriebene Außenleuchte für Rasen Garten 43 von 5 Sternen 2152. Diese Gartenstrahler machen alles mit. LED Strahler Fluter 50W Warmweiß Flutlicht Außen Garten Licht Outdoor IP65 SMD.
+    </p>
+    <h3>3 x Bodeneinbauleuchte Bodeneinbaustrahler IP65.</h3>
+    <p>DHL LED Fluter Außen Strahler Flutlicht Scheinwerfer Garten Lampe IP65 10-500W. EBay Kleinanzeigen - Kostenlos. Setzen Sie Ihren Garten wirkungsvoll in Szene - mit Spots und Strahler für den Außenbereich. 4x RGB LED 100W Fluter Scheinwerfer Flutlicht Außen Strahler Garten Lampe IP65.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Haus Garten Aussenbeleuchtung Aussenbeleuchtung Terrasse Boden Led Strahler Aussen Rund Ikea Lampe Draussen Led Strahler Aussen Aussenwandleuchte Led Strahler" src="https://i.pinimg.com/originals/9e/38/03/9e3803d2f3a782887c15097494f82959.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxg2jThzudA3l8vSi2f8UHIxQV_RTl74LvHA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Strahler garten-Ein schöner Garten ist ein Betrieb des Herzens Es ist eine immense Zufriedenheit einen eigenen Gartenplan nach entwerfen die Zufriedenheit kommt vom Entspannen oder Amüsieren in dem Garten sowie von der Zufriedenheit die von einer urbar gemachten Arbeit herrührt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Led Aussen Wand Lampe Garten Einfahrt Mauer Strahler Balkon Spot Leuchten Weiss Led Outdoor Wall Lights Wall Spotlights Outdoor Wall Lighting" src="https://i.pinimg.com/736x/81/75/03/817503a485b2ae6d9c3839125ab17755.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Y40o0QARsqFY5YKsY0uPLMIgEUBYdFRWaQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>EUR 783 bis EUR 7427.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60w Led Strahler Mit Bewegungsmelder Aussen 6000lm Superhell Led Fluter Onforude Security Lights Flood Lights Outdoor Lighting" src="https://i.pinimg.com/736x/57/cf/77/57cf772d759072196185134793434584.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-Ur59kn8m5f2nYkeABFmtpjFZVJb8LgQBw';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Dieser kleine LED PAR Strahler mit 12x 3W RGB bietet unzählige Möglichkeiten zur Party- Bühnen- und Effektbeleuchtung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tuinverlichting Spotlight In Steenlook Haus Und Garten Tuinverlichting Tuin Garten" src="https://i.pinimg.com/736x/41/c5/0f/41c50f20bc4bbb247fac195dd3eb1424.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6g4ZTTlFrIpZeCSQXKtS41rObU0VO3w4dyQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Diese Gartenstrahler machen alles mit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Effektbeleuchtung Aus Dem Boden Mit Bodenstrahler Albert Leuchten Gartenbeleuchtung Beleuchten" src="https://i.pinimg.com/originals/d1/6e/43/d16e430c947783078573062725a7d897.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNeMjIgPFnaeoc9WmZ8tSoJ8d6euq7z9BOlQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Apache Server at wwwmeyer-schrauben-shopde Port 443.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Led Beleuchtung Garten Beleuchtung Garten Led Strahler Garten Wandgarten" src="https://i.pinimg.com/originals/89/e8/e5/89e8e590527560ae0bd54c80affa1dd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1SDQRnP1QDJWxrZ73y5LJrZfXEZTqu6IThg';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Service Telefon 07052 40 40 - 44.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lichtspektakel In 2020 Led Strahler Aussenlampe Garten" src="https://i.pinimg.com/originals/7e/12/3a/7e123acb797efd799c42a56d850de98e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytsAx_Avi8-HsWIQUinfiAJ0ad2nCdId6_Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DHL LED Fluter Außen Strahler Flutlicht Scheinwerfer Garten Lampe IP65 10-500W.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Spotlights Strahler Floodlights With Earth Spike Projecteur Sur Piquet Scheinwerfer Mit Erdspiess Aussenleuchten Garten Gartenbeleuchtung Aussenleuchten" src="https://i.pinimg.com/originals/5c/39/e6/5c39e697db6e64c7eeb73e1d13b8279e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ai_8FGFqIXZiJKJ0NPVEjoAs7b31oZPYTw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>LED Fluter Außen Wand Strahler Fluter Flutlicht RGB Scheinwerfer Garten IP65.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Das Besondere Fur Den Anspruchsvollen Planer Gartenbeleuchtung Landschaftsbeleuchtung Albert Leuchten" src="https://i.pinimg.com/originals/31/bf/46/31bf46dd9547080e016553c728585230.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1C85eulOjG4ef17zpm5yFBPVCOOeMVmQ6g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4731 shipping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Slv Led Aussen Strahler 078289 Licht Lampe Leuchte Garten Draussen Aussenbereich Strahler Gartenlampe Gartenlicht Gartenlicht Led Strahler Aussenlampe" src="https://i.pinimg.com/originals/32/e8/7c/32e87cfdf9107ab66f3f88996aa39553.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PgCsGra0WjcXHbSBWL4c3i5A5EPO7qGfpQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Strahler garten-Ein schöner Garten ist ein Betrieb des Herzens Es ist eine immense Zufriedenheit einen eigenen Gartenplan nach entwerfen die Zufriedenheit kommt vom Entspannen oder Amüsieren in dem Garten sowie von der Zufriedenheit die von einer urbar gemachten Arbeit herrührt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Balkon Led Beleuchtung Solar Strahler Garten Schon Led Leuchte Best Garten Led Leuchten Solar Lights Garden Solar Garden Solar Light Crafts" src="https://i.pinimg.com/originals/fe/c9/69/fec9699deb41f9bcfc93cd9c6aa83469.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJqb5Swj_M-7GafIciiIB3YunG_wXL28BHQ';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Strahler garten-Ein schöner Garten ist ein Betrieb des Herzens Es ist eine immense Zufriedenheit einen eigenen Gartenplan nach entwerfen die Zufriedenheit kommt vom Entspannen oder Amüsieren in dem Garten sowie von der Zufriedenheit die von einer urbar gemachten Arbeit herrührt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lichtinspiratie Lichtinspiratie On Twitter Garden Design Garden Inspiration Backyard Landscaping Designs" src="https://i.pinimg.com/originals/67/56/f6/6756f618155c687888dd53c26cc65fb2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlehpOdBGYPoDxt-McAcmG6rdqDMnI_l2Rzg';" />
+        <small>Source: pl.pinterest.com</small>
+                    <p>Strahler für Teich und Garten für besondere Atmosphäre.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Led Gartenstrahler Erdspiess Kabel Schwarz Mit 3w Warmweiss Gu10 230v Ip65 Ip44 Gartenstrahler Strahler Aussenbeleuchtung Garten" src="https://i.pinimg.com/originals/18/31/1b/18311bb85856b2b596b1dcc4b58d9665.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRea54T3xb59XK17t3SpEzN5iuhlIxC9PYu1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>EEK A Versand.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="32 Neu Garten Led Strahler Check More At Https Www Opticrhythm Com Garten Led Strahler Solarleuchten Garten Schone Beleuchtung Led Lampen Garten" src="https://i.pinimg.com/originals/8f/3a/ed/8f3aedbadd4ded52fa3e255a4560daae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo8aV9td69CtQATdHFQTwceqwJN6CWaC4oQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DHL LED Fluter Außen Strahler Flutlicht Scheinwerfer Garten Lampe IP65 10-500W.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2er Set Led Edelstahl Boden Einbau Strahler Garten Weg Aussen Leuchten Ip67 Spots Strahler Aussenbeleuchtung Haus Haus Boden" src="https://i.pinimg.com/originals/96/19/e3/9619e342ef046d5d0b169603a83c2886.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQZ-HF8GHnLfKg2tC3OQ8bOhO2HYIhRFvxw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Made with Perfect Video httpgooglj49PLI.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Baume Und Straucher Mit Licht In Szene Setzen Strahler Aussenbeleuchtung Aussenleuchten" src="https://i.pinimg.com/originals/65/d1/0e/65d10e09193f9efabc1203410d6a49a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeOruMzeWIWuA_RhWee1mksCMh8oGgJ-0Dw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Außen-Wegeleuchten Jetzt entdecken Leuchtmittel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dot Spot Outdoor Luminaires Clarios Flex Beam Im Freien Strahler Garten" src="https://i.pinimg.com/originals/34/87/93/348793d7bf0a604828e107752725da91.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdIFnxve6Ll9l7jVb_Lnlrk2kxXUmloBEtw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>1171 shipping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beleuchtung Besonderer Merkmale Im Garten Wie Pflanzen Oder Statuen Schutzart Ip65 Strahler Gavin Fur Den Aussenbereich Aussenstrahler Led Led Aussenstrahler" src="https://i.pinimg.com/originals/b2/af/8d/b2af8d283bc0a53a04556106ae9ac101.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvKBkvzev9Wim-cnXBcUR28nGe8S4n0Yaqw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Made with Perfect Video httpgooglj49PLI.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bringen Sie Ihren Garten Zum Leuchten Beleuchtung Garten Gartenbeleuchtung Garten" src="https://i.pinimg.com/originals/e2/f6/a1/e2f6a1c088825fa57f71d3fdb304dcd3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqAQwSEuCTN0pnE-Cq2QKRrkGGjmrVzjm8Aw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Solar Strahler CLY Solarlampe Außen 60 Verbesserte LED für Hohe Helligkeit 4000mAh Batterie Solarpanel Licht Gesteuert IP66 Wasserdicht Solarbetriebene Außenleuchte für Rasen Garten 43 von 5 Sternen 2152.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image For Led Solar Aussen Lampe Garten Beleuchtung Tisch Leuchte Terrassen Strahler Kupfer Globo 33002t Lampen Garten Dekorative Beleuchtung Lampe" src="https://i.pinimg.com/originals/ce/56/b8/ce56b877846a2f98efb891e90b89905d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFTNCKLFxtl4chUUpGQnggwaq7jtfF9LB_w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4x RGB LED 100W Fluter Scheinwerfer Flutlicht Außen Strahler Garten Lampe IP65.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/garten-ideen-selber-bauen.html"><i>&larr; garten ideen selber bauen</i></a>
+                                                                    
+                                        <a href="/garten-gudewer-hamburg.html"><i>garten gudewer hamburg &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  START (hidden counter) -->
+<a href="/" alt="counter statistics" target="_blank" >
+<img  src="//sstatic1.histats.com/0.gif?4474445&101" alt="counter statistics" border="0">
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

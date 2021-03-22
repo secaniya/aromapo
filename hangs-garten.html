@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Hangs Garten
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "kuni"
+  },
+  "headline": "Hangs Garten",
+  "datePublished": "2021-03-22",
+  "image": "https://i.pinimg.com/474x/d7/57/86/d757864c2c431659a477be88480359d7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Garten Dekor",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hangs+garten",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Hangs Garten
+            </a>
+        </h1>
+        <p>
+                            Meine Webseite präsentiert eine reiche Aswahl von Inneneinrichtungen, modernen Häusern und Gebäuden, sowie die aktuellsten Ideen für interessante und festliche Wohndekoration.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '9842eab235f29e055f0637b3106c62c0',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://dadsimz.com/9842eab235f29e055f0637b3106c62c0/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Hangs Garten</strong>. Willkommen im offiziellen YouTube-Kanal des MDR Gartens. 1130 bis 1500 Uhr 1700 bis 2130 Uhr Dienstags Ruhetag.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/41/bf/fc/41bffc3718c1029e69311cc0e541c8ed.jpg" alt="Urban Jungle Bloggers On Instagram Hang In There The Weekend Is Almost Here Isn T This A Cool Idea F Plant Wall Indoor Gardens Hanging Plants" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjhHHNdmsdkPVE8ucMvdHsZA1TAgPld544Yw';">
+        <figcaption>Urban Jungle Bloggers On Instagram Hang In There The Weekend Is Almost Here Isn T This A Cool Idea F Plant Wall Indoor Gardens Hanging Plants from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Every last chapter of Ina and Jeffreys life together shows they are in it for the long haul and will forever. Weitere Ideen zu garten garten am hang landschaftsbau. Weitere Ideen zu garten gartengestaltung garten ideen.
+    </p>
+    <h3>Weitere Ideen zu garten garten am hang landschaftsbau.</h3>
+    <p>They were described as a remarkable feat of engineering with an ascending series of tiered gardens containing a wide variety of trees shrubs and vines resembling a large green mountain constructed of mud bricks. Weitere Ideen zu garten garten am hang landschaftsbau. Ina Garten and her husband Jeffrey have got all the top celeb couples totally beat. Weitere Ideen zu garten gartengestaltung gartengestaltung ideen.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Steinmauer Garten Pool Hanghang Ten A Hang Ten Is A Surfing Maneuver A Surfer Hangs Ten By Positioning Stone Walls Garden Garden Pool Pool Landscaping" src="https://i.pinimg.com/originals/c1/af/da/c1afda30ed591f9c948bb92573e04a5d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsJjCd5POahH5jIg0VmWSGYtSnellrYjTgQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The resort stands on the edge of a stunning valley surrounded by a picturesque rain forest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wisteria Vine Hangs From Garden In Bucaco National Park Landscape Wisteria National Parks" src="https://i.pinimg.com/originals/94/a9/0e/94a90e4c77dc250c76bd18f2e0970927.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWrlFCKVJNBqiT3dTziIARrSiC61RgN_BvIA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>12 Hangs Garten Rolle mit Schweinefleisch Glasnudeln und exotischer Soße 13 Gebackene Wan Tan mit süß-saurer Soße 14 Hühnerfleischspieß mit Erdnußsoße Satee scharf 15 Garnelenspieß mit Cha Cha Soße scharf 16 Garnelen im Teig gebacken 17 Hangs Garten Vorspeisenplatte für 2 Personen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Benches And Garden Bed" src="https://i.pinimg.com/originals/30/ea/5e/30ea5e57f5f38631413546c507f622ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwWQIIfnau2AGZT0vJU0SGWV4b_gRDhd2Dw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mongolian in Mörlenbach Hessen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hanggarten Selbst De Garten Am Hang Steinmauer Garten Garten" src="https://i.pinimg.com/originals/e3/35/55/e335555c78f6301249f72b12a34c3f4f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6lJgdT43o-gU4q_6cGQFT8WdvUdG0TcIsA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Garten am Hang gestalten 28 Nutzungsideen der Hanglage.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Garten Am Hang Anlegen Und Schone Hangbeete Bepflanzen Garten Am Hang Garten Terrasse Garten" src="https://i.pinimg.com/originals/5a/39/1e/5a391ea53c7506d773de6ea1c5ce9668.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWEB_5awyvDT6pi0HaxX3yI59KF3IkV7RdPA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>12 Hangs Garten Rolle mit Schweinefleisch Glasnudeln und exotischer Soße 13 Gebackene Wan Tan mit süß-saurer Soße 14 Hühnerfleischspieß mit Erdnußsoße Satee scharf 15 Garnelenspieß mit Cha Cha Soße scharf 16 Garnelen im Teig gebacken 17 Hangs Garten Vorspeisenplatte für 2 Personen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sehr Schoner Sitzplatz Unterhalb Des Hangs Oder Als Standplatz Fur Eine Outdoorshower Von Wwwwellnessgartendusche Garten Gartengestaltung Sitzecken Garten" src="https://i.pinimg.com/originals/24/7b/c3/247bc3d9d84d23bb0ad686e0a616010b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0N2Ph7LzE78M6N8NXWhHr8JBN7rvjW3Dzg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ina Gartens flag cake Ina Garten Photo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gartenideen Blumentopfe Paletten Garten Pflanzen Blumentopfe Garten Gartenideen Paletten P Vertical Garden Diy Hanging Flower Pots Vertical Pallet Garden" src="https://i.pinimg.com/474x/d7/57/86/d757864c2c431659a477be88480359d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIvijqqdbtEa-pT7CafJlUG-C31RmjcafdQ';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Garten am Hang gestalten 28 Nutzungsideen der Hanglage.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Secret Garden Backyard Garden Landscape Beautiful Gardens Backyard Garden Design" src="https://i.pinimg.com/originals/f5/c6/39/f5c6390a00ba8c48c61739f4a7eb9a85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbSDk8nTA_-uuBrDl5Xwfd4n1NKZhA-A6-Bw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wenn Sie Ihren Garten am Hang anlegen möchten müssen Sie die Herausforderungen der Natur treffen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Repurposed Old Tin Sifter Garden Hanging Planter Hangs From Jute Rope Deco Plantes Deco Nature Jardinage" src="https://i.pinimg.com/originals/c2/9c/bc/c29cbcd67ca8fc4188409c4ba373ae03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtENzpxXxz4eXhYsR-dvAOdzSgKTFnZiDftA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ina Gartens flag cake Ina Garten Photo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hanggarten Anlegen Ein Garten Auf Mehreren Ebenen Garten Landschaftsbau Garten Garten Am Hang" src="https://i.pinimg.com/originals/4f/32/35/4f3235e93fe499ede8d971a71e1bb5a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OY-o9oUIfPiLQg4LNVufsMwIy3TyuAufwA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Zuckermais im Garten anbauen ansähen auspflanzen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Urban Jungle Bloggers On Instagram Hang In There The Weekend Is Almost Here Isn T This A Cool Idea F Plant Wall Indoor Gardens Hanging Plants" src="https://i.pinimg.com/originals/41/bf/fc/41bffc3718c1029e69311cc0e541c8ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjhHHNdmsdkPVE8ucMvdHsZA1TAgPld544Yw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Weitere Ideen zu garten gartengestaltung garten ideen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Annie Beautiful France Garden Hangs House Sloan39s Swing This Beautiful Swing Hangs In The Garden Of Annie Sloan Schaukel Garten Kinderschaukel" src="https://i.pinimg.com/236x/28/5e/43/285e435ae5f411fd4a5c564f7785927b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvglS6-euFRX4fZmLE4AUSYyKkUyS_qYGW7w';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic culture.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Diy Upcycled Pallet Rainbow Flower Garden Vertical Garden Diy Hanging Flower Pots Vertical Pallet Garden" src="https://i.pinimg.com/736x/e2/f1/7b/e2f17b02886a240226f27272e9c1c7e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxLejH9ykBgEL2VtKZv_aoA52k1rlOvhCFA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>They were described as a remarkable feat of engineering with an ascending series of tiered gardens containing a wide variety of trees shrubs and vines resembling a large green mountain constructed of mud bricks.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gartenideen Blumentopfe Paletten Aussenbereich Dekorieren Blumentopfe Dekorieren Enbereich G Vertical Garden Diy Hanging Flower Pots Vertical Pallet Garden" src="https://i.pinimg.com/736x/d0/b5/bb/d0b5bb4a46b96b121a7a84f66c487aeb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeM5lzU-3fCna9rLa8Mfg5oR87NBc8SzP55A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Every last chapter of Ina and Jeffreys life together shows they are in it for the long haul and will forever.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ziergarten Hang Pinterest Google Suche Garten Landschaftsbau Landschaftsbau Hugel Garten" src="https://i.pinimg.com/originals/8f/65/2e/8f652e99eb298aeb0fb16b86f5b26549.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwrHBF6Kquh9vOW_XZND-GKQAmx70gNFvvw';" />
+        <small>Source: es.pinterest.com</small>
+                    <p>01022020 - Erkunde Lena Lenas Pinnwand Garten am Hang auf Pinterest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Auf Potager" src="https://i.pinimg.com/originals/ea/ab/48/eaab4833c1c6c1f55f930f5fc34f8a93.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoQvcWBKtgctwZRIo8KycY7tSOP9HcIoY4Q';" />
+        <small>Source: fr.pinterest.com</small>
+                    <p>Verwandeln Sie diesen frustrierenden Hang in ein dramati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Garten Am Hang Anlegen Und Schone Hangbeete Bepflanzen Garten Garten Landschaftsbau Garten Stufen" src="https://i.pinimg.com/originals/ae/7f/26/ae7f26e48262dbf0697237a4ef5d42f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfCo71a4x-RTkRQrig7-U3_8EhyoN07eok1A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>30032020 - Erkunde Barbara ls Pinnwand Hang Garten auf Pinterest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="My Version Of The Beaded Hanging Pots Hangs On The Right Of The Picture Finally Decided What To Do With Al Decorative Bird Houses Garden Crafts Ladybug Garden" src="https://i.pinimg.com/originals/a3/d0/f5/a3d0f53eb9f4590c84b0f235f68f4a1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmymAynF1qLPHcc-oa9et9__x1YTnPV6jbjw';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>29042020 - Gärten in Stufen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Miraculous Ideas Whimsical Garden Ideas Wine Bottles Mini Garden Ideas Garten Creative Garden Vertical Garden Diy Hanging Flower Pots Vertical Pallet Garden" src="https://i.pinimg.com/originals/88/7f/bf/887fbfb43b643d3db0aa41be79e895b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmYw2QseO89NOrkwhlIzbWhuZs0_lDg70u7Q';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Weitere Ideen zu garten am hang garten gartengestaltung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Instagram On Instagram Star Slope There The Star Of Ald On Instagram Ald Inst Modern Entrance Door Home Entrance Decor House Exterior" src="https://i.pinimg.com/originals/4c/2e/81/4c2e81b6a1bf688b27578c52f996b380.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROym1SzLcm7Wxqrr8Syj8tD6QBIqGwJQyPYg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Every last chapter of Ina and Jeffreys life together shows they are in it for the long haul and will forever.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/franzoesische-gaerten.html"><i>&larr; franzoesische gaerten</i></a>
+                                                                    
+                                        <a href="/flora-und-botanischer-garten-koeln.html"><i>flora und botanischer garten koeln &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  START (hidden counter) -->
+<a href="/" alt="counter statistics" target="_blank" >
+<img  src="//sstatic1.histats.com/0.gif?4474445&101" alt="counter statistics" border="0">
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

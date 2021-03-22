@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Philips Hue Garten
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "kuni"
+  },
+  "headline": "Philips Hue Garten",
+  "datePublished": "2021-03-22",
+  "image": "https://i.pinimg.com/originals/94/2f/06/942f06497e1ef3eab58eba1e05c70c8a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Garten Dekor",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=philips+hue+garten",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Philips Hue Garten
+            </a>
+        </h1>
+        <p>
+                            Meine Webseite präsentiert eine reiche Aswahl von Inneneinrichtungen, modernen Häusern und Gebäuden, sowie die aktuellsten Ideen für interessante und festliche Wohndekoration.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '9842eab235f29e055f0637b3106c62c0',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://dadsimz.com/9842eab235f29e055f0637b3106c62c0/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Philips Hue Garten</strong>. The Philips Hue Outdoor Sensor operates as a temperature light and motion detector outside your home to trigger lights and other scenes. Philips Hue ist nicht nur eine smarte Lampe sondern ein smartes Lichtsystem.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/9f/de/18/9fde18845b25bf6366a0a34767e0b826.jpg" alt="Moderne Smart Home Wegbeleuchtung Garten Impress Von Philips Hue Schwarz Hue Philips Pillar Lights Hue" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovRiFVkc3lUQUFxPHPo-qR_82HJElrxgd_Q';">
+        <figcaption>Moderne Smart Home Wegbeleuchtung Garten Impress Von Philips Hue Schwarz Hue Philips Pillar Lights Hue from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        At CES 2019 Philips Hue unveiled a range of new Smart Lights Motion Detectors Philips Hue Sleep and Wake Up with Google Assistant Updates to Hue Sync. Hi All I want to control a Philips Hue with my KNX MDT Switch. Philips Hue Garten- und Außenleuchten Egal ob Grillabend großes Gartenfest oder romantisches Dinner setze Dein Zuhause mit den Philips Hue Außenleuchten optimal in Szene.
+    </p>
+    <h3>Hue Entertainment im Garten nutzen zwei BeispieleEigentlich dient Philips Hue der smarten Beleuchtung daheimVor einiger Zeit hat Philips Hue Entertainmen.</h3>
+    <p>Turn your ordinary livingroom into a dancefloor. The Philips Hue Outdoor Sensor operates as a temperature light and motion detector outside your home to trigger lights and other scenes. The application will now search for any Hue lights in your home. Philips Hue Garten- und Außenleuchten Egal ob Grillabend großes Gartenfest oder romantisches Dinner setze Dein Zuhause mit den Philips Hue Außenleuchten optimal in Szene.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Color Impress Led Sockelleuchte Sockelleuchte Wegbeleuchtung Aussenbeleuchtung" src="https://i.pinimg.com/originals/9e/69/9a/9e699abc1e8499efea803a385c3ddd02.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvgoM1bRwhhbDLAHIUrxFXxCwtYCG4fPAXDw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Once found you can add them to a room or zone for easy control.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White And Color Ambiance Impress Led Wandleuchte Schmal Schwarz Die Moderne Und Zugleich Zeitlose Wan Wandleuchte Hinterhof Designs Patio Garten" src="https://i.pinimg.com/736x/45/84/52/458452c20e3e1fc2364710672b3d6b9b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIYXLfU2Zch8Ivlxzj6vXneVu6QXGI5QBmw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Darken your room and connect the audio to your speakers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Color Ambiance Calla Sockelleuchte Schwarz Niede Philips Hue 1742030p7 Sockelleuchte Deko Ideen Gartenleuchten" src="https://i.pinimg.com/736x/56/5f/db/565fdb853ad221b0fa78d3277a7fe5fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSJEmpVt1qKqnP6VC0jxTGrwapYkl-b0hw4g';" />
+        <small>Source: no.pinterest.com</small>
+                    <p>Philips Hue Product Dimensions 755 x 22 x 22 cm.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philip Hue S Versatile Outdoor Light Strip Makes Drab Yards Holiday Decor Dazzle Outdoor Lighting Hue Philips Outdoor Light Strips" src="https://i.pinimg.com/originals/79/6f/cf/796fcfea4e6f6a1c3cdc35575a2a7c5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIHi50c-fQAYqEHMtlNxJjp7Ot9RNkIXcrJw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Philips Hue White and Color Ambiance LED Calla extension for outdoor use dimmable up to 16 million colors controllable via app compatible with Amazon Alexa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Color Ambiance Lily Erdspiessleuchte Schwarz Philips Hue 1741430p7 Landschaftsbeleuchtung Gartenbeleuchtung Aussenleuchten Garten" src="https://i.pinimg.com/originals/86/03/0f/86030fadcb3dad1e5428cc48b5fec7f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDsJYg7mzmdFcuDUl_SrqiizqRehXTPwBWuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ihr wollt euren Garten oder den Balkon mit einer schönen Beleuchtung versehen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Ambiance Lucca Wegeleuchte Anthrazit Philips Hue 1740393p0 Led Led Leuchtmittel Lucca" src="https://i.pinimg.com/736x/c0/22/4a/c0224a1ab14666f63bbf1b1988505289.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7uhqeMIlwxWJi2J-8nLj433rpgR-mqQ-YQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ihr wollt euren Garten oder den Balkon mit einer schönen Beleuchtung versehen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Fuzo Led Wegeleuchte Schwarz Garten Aussenleuchten Wenn Sie Ihren Aussenbereich Ins Richtige Li Wegbeleuchtung Lampen Garten Beleuchtung" src="https://i.pinimg.com/736x/cf/db/c6/cfdbc6541602f18d470e4852adfb05a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTftwjk4v_Otic2t3bdcEvcdiGCOh_iHIHAzA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>At CES 2019 Philips Hue unveiled a range of new Smart Lights Motion Detectors Philips Hue Sleep and Wake Up with Google Assistant Updates to Hue Sync.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Color Ambiance Econic Sockelleuchte Schwarz Philips Hue 1744130p7 Sockelleuchte Laterne Fur Draussen Aussenleuchten" src="https://i.pinimg.com/originals/db/c0/86/dbc0860490ce42878bae489166695669.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2AZbAcVs09QQHPHxtSt7IPhO-xIDKuin0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Smartes Licht mit intelligenter Steuerung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue Calla Led Rgbw Sockelleuchte Erweiterungs Set 24v 1743730p7 Sockelleuchte Led Hue" src="https://i.pinimg.com/originals/00/bb/a7/00bba7d3dbcd898bc92f1f6eb6ea9edb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuz_mY05UvPAgAH7xQAd9_CpZBTSNadgs7A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Erwecke Deine Außenbereiche mit einer Reihe speziell entwickelter Außenleuchten zum Leben.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Ambiance Tuar Sockelleuchte Stahl Geburstet Philips Hue 1740547p0 Sockelleuchte Standlicht Wegbeleuchtung" src="https://i.pinimg.com/originals/34/3c/4d/343c4d9edf5abf10491cd1f1284a3cd6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolAxSal5w66-_vbEQmrSIzg1THLAQGcSfwA';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Philips Hue Garten- und Außenleuchten Egal ob Grillabend großes Gartenfest oder romantisches Dinner setze Dein Zuhause mit den Philips Hue Außenleuchten optimal in Szene.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Ambiance Turaco Wegeleuchte Anthrazit Philips Hue 1647493p0 Aussenleuchten Lampen Und Leuchten Anthrazit" src="https://i.pinimg.com/736x/f7/c8/07/f7c807ce60d4301ff44927ed0bc471a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTADZRfmY3SCo0Qy50GXX-NPGrDpXJw1TTyAg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Use your Hue Connected restaurant as a party location without the need for an expensive lightplan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Moderne Smart Home Wegbeleuchtung Garten Impress Von Philips Hue Schwarz Hue Philips Pillar Lights Hue" src="https://i.pinimg.com/originals/9f/de/18/9fde18845b25bf6366a0a34767e0b826.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovRiFVkc3lUQUFxPHPo-qR_82HJElrxgd_Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hue Disco requires a Philips Hue Bridge Hue Disco does it all with your Philips Hue setup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue Fuzo Led Sockelleuchte 1744730p7 Sockelleuchte Philips Hue Lampe Lampen Garten" src="https://i.pinimg.com/originals/c8/3e/9e/c83e9e221b0d38cae036e3197fa87ef2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjnRp9fYsl_y_tf5mpQfZh7RClUP6kB2SrQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Vorgarten 360 Raum entdecken.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Smart Lighting Philips Hue Smart Outdoor Lighting Hue Philips Outdoor Garden Lighting" src="https://i.pinimg.com/736x/87/37/71/87377110dd40fa8798943de2f6ac0053.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADheMhsJ4i6OgCA6Ng4n1N-SNLcpUx8jMdw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Currently in my items.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Auf Light In The Dark" src="https://i.pinimg.com/originals/86/be/f2/86bef2f0c73fbf4b782d499eb3d1759d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcjtk86sASXh-lF90SkZGYb1PW5FtAvNm-Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Philips Hue White and Color Ambiance LED Calla extension for outdoor use dimmable up to 16 million colors controllable via app compatible with Amazon Alexa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Turaco Led Sockellampe Steuerbar Sockelleuchte Wegbeleuchtung Lampen Garten" src="https://i.pinimg.com/originals/30/45/11/304511be42584913d11fc502b612b66e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpGQ_YHN8alxM3WITnCaTuGvJRGUpQumVzw';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Finde heraus welche Möglichkeiten Dir mit der smarten Außenbeleuchtung von Philips Hue offenstehen und verwandle Deinen Garten in eine stimmungsvolle Oase.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White Lucca Sokkel Lucca Led Buitenverlichting" src="https://i.pinimg.com/474x/36/8f/ec/368fec93b1cd1c9c066c6a43b3b375d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ26vdS_SIZFong9NvCJ6yWPpncF6YtQmPe6w';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Do you have an example for how to do this.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue Impress Pedestal Light Extension Set Modern Smart Home Path Lighting Garden Impress By Philips Hue Black Hue Philips Outdoor Light Fixtures Hue" src="https://i.pinimg.com/originals/94/2f/06/942f06497e1ef3eab58eba1e05c70c8a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvvrjv7cXs5r0y7kWJZEBLiLh_axdFsuQKg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Philips Hue Garten- und Außenleuchten Egal ob Grillabend großes Gartenfest oder romantisches Dinner setze Dein Zuhause mit den Philips Hue Außenleuchten optimal in Szene.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue Lightstrip Outdoor 5m Buiten Buitenruimte Achtertuin" src="https://i.pinimg.com/474x/d6/96/d3/d696d35b3ee44e4818dc7b17e8ae473c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-mcPeYx40v5AC5V1KSJTF7RLtXdaxL1Zbw';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Dann ist Philips Hue Outdoor vielleicht genau das richtige für euch.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philips Hue White And Color Ambiance Led Wandleuchte Appear 1200lm Schwarz Garten Aussenleuchten Leuchten In 2020 Wandleuchte Aussenwandleuchte Partybeleuchtung" src="https://i.pinimg.com/originals/2d/7c/f8/2d7cf86372d50cd6bd5d8d4f3aeee7f3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Kz49XQN6CztPNK5w4deKKrwNznmg0wvo3g';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Beleuchte Wege und Wände setze attraktive Lichtspots und sorge für farbige Highlights oder ein harmonisches Ambiente und das vollautomatisiert per App.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/drainage-verlegen-garten.html"><i>&larr; drainage verlegen garten</i></a>
+                                                                    
+                                        <a href="/der-pflanzenarzt-mein-grosses-praxisbuch-fuer-garten-und-balkon.html"><i>der pflanzenarzt mein grosses praxisbuch fuer garten und balkon &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  START (hidden counter) -->
+<a href="/" alt="counter statistics" target="_blank" >
+<img  src="//sstatic1.histats.com/0.gif?4474445&101" alt="counter statistics" border="0">
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

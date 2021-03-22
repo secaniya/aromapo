@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Wohnflaechenberechnung Garten
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "kuni"
+  },
+  "headline": "Wohnflaechenberechnung Garten",
+  "datePublished": "2021-03-22",
+  "image": "https://i.pinimg.com/564x/73/c0/65/73c06529e6c255627f87c550c94fdb91.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Garten Dekor",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wohnflaechenberechnung+garten",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Wohnflaechenberechnung Garten
+            </a>
+        </h1>
+        <p>
+                            Meine Webseite präsentiert eine reiche Aswahl von Inneneinrichtungen, modernen Häusern und Gebäuden, sowie die aktuellsten Ideen für interessante und festliche Wohndekoration.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '9842eab235f29e055f0637b3106c62c0',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://dadsimz.com/9842eab235f29e055f0637b3106c62c0/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Wohnflaechenberechnung Garten</strong>. Grundsätzlich gehört der Wintergarten erst einmal zur Wohnfläche die mitberechnet wird. Dachgärten und Loggien steht in der amtlichen Begründung zur Wohnflächenverordnung dass eine Abweichung von der Regelanrechnung zu einem Viertel nur dann zulässig ist wenn hier spezielle Umstände des Einzelfalls zu Grunde liegen.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/73/c0/65/73c06529e6c255627f87c550c94fdb91.jpg" alt="Ihr Traumhaus Massiv In Ziegel Gem Enev Traumhaus Haus Style At Home" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ_OMUZKizdjU6NASrIlj6CMq2TJ7xrIPzYA';">
+        <figcaption>Ihr Traumhaus Massiv In Ziegel Gem Enev Traumhaus Haus Style At Home from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Wohnfläche berechnen - auf zwei verschiedene Arten Dass Räume wie Schlafzimmer Wohnzimmer und Bad zur Wohnfläche gehören ist wahrscheinlich jedem klar. Bis zu einem Meter zählt die Fläche nicht zur Wohnfläche. Wohnfläche unterhalb von Schrägen oder Treppen.
+    </p>
+    <h3>Wohnfläche unterhalb von Schrägen oder Treppen.</h3>
+    <p>Dabei umfasst die Wohnfläche die Grundfläche aller Räume die ausschließlich zur Wohnung gehören. Beheizt normale Fenster aber mit Schacht. 25112003 I 2346 von der Bundesregierung und dem Bundesministerium für Familie Senioren Frauen und Jugend im Einvernehmen mit dem Bundesministerium für Wirtschaft und Arbeit dem Bundesministerium für Verkehr Bau- und Wohnungswesen und dem Bundesministerium für Gesundheit und Soziale Sicherung mit Zustimmung des. Muss man aus unterschiedlichen Gründen die Wohnflächenberechnung durchführen so klappts auch mit dem richtigen Ergebnis.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bauinnovationszentrum Architektur Fertighaus Bauen Fassade Haus" src="https://i.pinimg.com/originals/a8/a8/b3/a8a8b3108d166efe2d1dfcd0f49b7419.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ah1YQ05AqFag0EazzhhVydYm7RAbz14hFQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Es gibt noch eine weitere Möglichkeit Ihre Wohnfläche zu berechnen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Dom" src="https://i.pinimg.com/originals/97/7b/37/977b3715a02c27b38b7bf18f099500fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLdTAqgOf32G28FwHku-wtwSbwYXR0dzsuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In Bezug auf die Anrechenbarkeit bei der Wohnflächenberechnung für Terrasse und Balkon bzw.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Holzbau Saurer Einfamilienhaus Fassade Haus Haus Bauen Haus Hanglage" src="https://i.pinimg.com/originals/e3/4a/dd/e34adddd3ea9e2d03fdb4357139b25f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSumHudP8kP060yVnLAE_vXr4wvZQNZiQuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wohnflächenberechnung nach der Wohnflächenverordnung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Von Tanja Auf Infografiken Immobilien Mieten Immobilien Immobilien Kaufen" src="https://i.pinimg.com/originals/bb/da/9d/bbda9dda3b6c9fb6f0c515560a66790f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Jd0yZFo25vnz9dZIfBPclFd8HC0-92ebFQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Die HausXXL-Redaktion hat deshalb die wichtigsten Fakten zur Wohnflächenberechnung zusammengetragen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wohnflachenberechnung Wohnflachenberechnung Immowelt Flachen" src="https://i.pinimg.com/originals/b6/e6/b9/b6e6b98debf2a450299692a210b27368.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6hxWlvaCYdOh1G8uNSuXvOgg9BGSETzipw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ab zwei Metern Raumhöhe wird die Fläche zu 100 Prozent angerechnet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Schones Haus In Munchen Immobilienmakler Munchen Immobilienmakler Immobilien" src="https://i.pinimg.com/originals/39/2c/68/392c68443d85872f4d24f4127303e146.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nWrJMw2cC_OXA0h5jbI8ciMMnl4FHvs-CQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In Bezug auf die Anrechenbarkeit bei der Wohnflächenberechnung für Terrasse und Balkon bzw.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Grundriss Einfamilienhaus 9 11 Grundriss Einfamilienhaus Haus Grundriss Bauplan Haus" src="https://i.pinimg.com/originals/6d/3c/76/6d3c769404ed6ae8c4c124b014b93c24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkaXks4q3VYO3Sw-5Q0VTwSs56kq1l0yf1zQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Für Eigentümer ist die DIN 277 vorteilhaft da sie ein größtmögliches Flächenergebnis erzielt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ihr Traumhaus Massiv In Ziegel Gem Enev Traumhaus Haus Style At Home" src="https://i.pinimg.com/564x/73/c0/65/73c06529e6c255627f87c550c94fdb91.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ_OMUZKizdjU6NASrIlj6CMq2TJ7xrIPzYA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lichtes Maß Balkon Abweichungen nach unten Terrasse Wintergärten Raumteile unter Treppen Höhe von weniger als 1 m Maisonettewohnung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Neubau Zweifamilienhaus Holzhaus Modern Was Wir Bauen Meiberger Holzbau Wohlfuhl Holzbauten Individueller Archi Zweifamilienhaus Holzhaus Familien Haus" src="https://i.pinimg.com/originals/a9/0a/ba/a90aba123d70b3b8bc18fe8c62d0bf7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9AObWMxy4bZyAfBr6R_2MyFtyzF2VE13GWg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>25112003 I 2346 von der Bundesregierung und dem Bundesministerium für Familie Senioren Frauen und Jugend im Einvernehmen mit dem Bundesministerium für Wirtschaft und Arbeit dem Bundesministerium für Verkehr Bau- und Wohnungswesen und dem Bundesministerium für Gesundheit und Soziale Sicherung mit Zustimmung des.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bewertung Von Immobilien Im Aussenbereich Immowerte Geipel Immobilienbewertung Immobilien Bewertung" src="https://i.pinimg.com/564x/1e/a3/61/1ea3612284f68f4e4bf8cea8d640fd2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7L5AuHOVDVWJkPUdGLo9TIp5mclGu_u_PHg';" />
+        <small>Source: uk.pinterest.com</small>
+                    <p>Wohnfläche berechnen - auf zwei verschiedene Arten Dass Räume wie Schlafzimmer Wohnzimmer und Bad zur Wohnfläche gehören ist wahrscheinlich jedem klar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Casa Prefabbricata In Legno Moderna A Due Piani Con Rifiniture Esterne In Legno Case Prefabbricate Piani Della Casa Da Sogno Design Esterno Di Casa" src="https://i.pinimg.com/originals/c4/66/45/c46645d04181d981187e8830df546c81.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAjfq07KL_D2P4xT4Oer4I7ifleVhz1ORlOw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wichtiger Anhaltspunkt ist dabei die Wohnflächenverordnung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Immobilie Verkaufen Ohne Makler So Geht S Video Immobilie Verkaufen Haus Verkaufen Immobilien" src="https://i.pinimg.com/originals/63/7c/c8/637cc8de617bbf2da3d5577287b98055.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCiOo3dGTqjCC9vgaiSnOKHWYhP8FYih0L2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Grundsätzlich gehört der Wintergarten erst einmal zur Wohnfläche die mitberechnet wird.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Von Tanja Auf Infografiken Immobilien Mieten Immobilien Immobilien Kaufen" src="https://i.pinimg.com/600x315/bb/da/9d/bbda9dda3b6c9fb6f0c515560a66790f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xB_9f9tIPVlHVV2QjPjPJhayVgpr6My5pg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Die Berechnung gemäß der Wohnflächenverordnung ist die gängigere Methode.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Schones Treppenhaus Im Altbau Munchen Schwanthalerhohe Ihr Immobilienmakler In Munchen Umgebung Rufen Si Immobilienmakler Immobilien Angebote Altbau" src="https://i.pinimg.com/originals/86/fa/f7/86faf7c8f620e0680deb99e218200d9a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQ8kH8lSzWamSlgvhrjQ_JLm3rh-Dwaw6KA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Für Eigentümer ist die DIN 277 vorteilhaft da sie ein größtmögliches Flächenergebnis erzielt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Liebelarchitekten Httlingen Hausliebel Architekten Haus Huttlingen House Cabin House Plans Architecture" src="https://i.pinimg.com/originals/ce/36/1f/ce361f3b881faae4eeb89a95da4c902a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3AELAmTWszr9F9SQBjDntt_xvmoWvtCa9A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Philips is a diversified health and well-being company focused on improving peoples lives through meaningful innovation.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gartentreppe Anlegen Youtube" src="https://i.pinimg.com/originals/cf/26/f2/cf26f22ed9db6a997f5f0867beec8f48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFu4XsTQ30Yb5azyX73gQ_q_c3L97Ffpw8g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Die Grundfläche eines Wintergartens der nicht beheizt werden kann zählt jedoch lediglich zur Hälfte mit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bauleitung Und Enev Nachweis Einfamilienhaus In Sauldorf Ot Boll Koch Bautechnik Bauleitung Neubau Bau" src="https://i.pinimg.com/474x/7b/1f/cc/7b1fccb1e2e3f44f9657bca4a39fd808.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4o_Pc6cKO-ThxFD_YCdQr3ptDzMOaojAng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Der Keller ist extra.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ganz Schon Schrag Wohnen Unter Einem Ausgebauten Dach Zusatzlicher Wohnraum Mit Charme Und Hohem Nutzwert Warmedammung Wohnflachenberechnung Konterlattung" src="https://i.pinimg.com/564x/d7/dc/f5/d7dcf52266a22f779088be5f522988d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbOVdClMJ6BI2BjThbZllC05uBFxJFt7tbVA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Von einem Meter bis 199 Meter zählt die Fläche zur Hälfte.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Auf Tolle Haushalts Gesundheitstips Und Tricks" src="https://i.pinimg.com/originals/fc/3b/95/fc3b9528852bab0fad34b06a4c091d28.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33cc5EiUiqVsBJv_uVnMNS_iHxhQxQLcz3g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beheizt normale Fenster aber mit Schacht.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Geraumiges Einfamilienhaus Mit Lounge Einfamilienhaus Fertighauser Anbau Haus" src="https://i.pinimg.com/originals/3f/32/4d/3f324d8533512c97e85de6a52c34a13d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ-WQAEwFLKbYeliIp5Yf9rdFALj99oGYBSw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Der Keller ist extra.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/whirlpool-garten-obi.html"><i>&larr; whirlpool garten obi</i></a>
+                                                                    
+                                        <a href="/wieviel-dezibel-sind-im-garten-erlaubt.html"><i>wieviel dezibel sind im garten erlaubt &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  START (hidden counter) -->
+<a href="/" alt="counter statistics" target="_blank" >
+<img  src="//sstatic1.histats.com/0.gif?4474445&101" alt="counter statistics" border="0">
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

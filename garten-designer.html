@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Garten Designer
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "kuni"
+  },
+  "headline": "Garten Designer",
+  "datePublished": "2021-03-22",
+  "image": "https://i.pinimg.com/originals/90/9a/66/909a6677cef5f10f864a8032ff01c58f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Garten Dekor",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=garten+designer",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Garten Designer
+            </a>
+        </h1>
+        <p>
+                            Meine Webseite präsentiert eine reiche Aswahl von Inneneinrichtungen, modernen Häusern und Gebäuden, sowie die aktuellsten Ideen für interessante und festliche Wohndekoration.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '9842eab235f29e055f0637b3106c62c0',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://dadsimz.com/9842eab235f29e055f0637b3106c62c0/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Garten Designer</strong>. At Charlotte Rowe Garden Design we offer a full garden design service for clients whether it is small town garden or a larger landscape. My formal architectural education also introduced me to the concept of the regulating line.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/b8/37/aa/b837aa6c473ab5b98358fa06dcabcf92.jpg" alt="Here S Our Favorite 25 Design Ideas Of Small Backyards Small Backyard Landscaping Modern Garden Design Small Garden Design" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPRW5uLnkyVYVKV-3vdh8wT-C6Ht6VSZ72Lg';">
+        <figcaption>Here S Our Favorite 25 Design Ideas Of Small Backyards Small Backyard Landscaping Modern Garden Design Small Garden Design from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Whether your new to gardening or a seaoned expert youll find plenty of inspiration. Updating your homes landscaping is a great way to increase the value of your property and create outdoor spaces for relaxing and entertaining. Create a space for quiet contemplation with a Zen garden design.
+    </p>
+    <h3>Whether your new to gardening or a seaoned expert youll find plenty of inspiration.</h3>
+    <p>Garden designers will provide a complete service including planting plans hard landscape elements paths walls paving decking and special features such as water features lighting and garden furniture. A garden designer can do design-only work for their clients and work with a garden contractor to finish the job or complete the whole. The Society of Garden Designers Whether you want to create a brand new garden or are simply looking for an inspired new planting scheme the Society of Garden Designers is here to help. Garden designers will provide a complete service including planting plans hard landscape elements paths walls paving decking and special features such as water features lighting and garden furniture.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Low Maintenance Front Garden Ideas Australia Low Maintenance 24 Photos Garden Ideas Ireland Small Backyard Gardens Backyard Garden Design Garden Design Plans" src="https://i.pinimg.com/originals/af/11/67/af116788b2c45e6e1479c9107033d911.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwhn0qjNMrZAdty_tIxZLsNj3iXhYUHAvlAw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3d Garten Designer 7 Software Leawo DVD Creator v7900 Leawo DVD Creator is a fast video to DVD converter burner that can easily convert video files from all popular formats and burn into DVD with excellent quality such as avi to DVD mp4 to DVD wmv to DVD rm to DVD etc.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bea Ray Garden Design Ltd Home Small Garden Layout Small Garden Plans Garden Design Plans" src="https://i.pinimg.com/originals/5a/2e/42/5a2e42458be826db25d9f2ad79b6f783.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNXFHITk6iYZagpQRk9XEqOq-CwfLi_ooMA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mary Reynolds is an Irish gardener landscape designer author and public activist known for being the youngest contestant to win a gold medal at the Chelsea Flower ShowShe currently works as an author designer and environmentalist and published her first book The Garden Awakening in 2016.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contemporary Modern Small Garden Designer Anewgarden Battersea Clapham Balham Dulwich Lond Modern Backyard Landscaping Modern Garden Design Front Garden Design" src="https://i.pinimg.com/originals/34/1b/a9/341ba9ac55f7442141fbccaf7cc44eca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYRcH8WNIWpW-8u4uenWHwyvBT74HFjgS9zA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Learn how to create stylish landscapes follow garden trends and get tips to try in your own garden.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Herb Garden Flower Garden Design Herb Garden Design Herb Garden In Kitchen" src="https://i.pinimg.com/originals/0a/0c/2f/0a0c2f1ded7bf0d6c9ca9a7f02863f62.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_I_jOUSqxpcjvDnuTqD79gv-O8I6L9L-eMA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Our members are some of the leading names in the industry working across a range of projects from small courtyards and roof gardens to country estates and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Garden Design Garden Design Plans Garden Design Planting Plan" src="https://i.pinimg.com/originals/f3/e7/1a/f3e71acb11202024d083979014f5eb83.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-qyaZa3M9JznNzLfu6qIDXAJm2ZcwwTsw0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>My formal architectural education also introduced me to the concept of the regulating line.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Garden Designers Roundtable Designers Home Landscapes Small Backyard Landscaping Backyard Garden Design Garden Landscape Design" src="https://i.pinimg.com/originals/ce/13/86/ce138629fad0a78950e95ea73b3141e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJe6BxCTsAOLdqPrW8yfIHsCgSzaNZgw2rLw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Keep it cool on hot days with shade from an umbrella shade sail pergola or even better a shade tree.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mediterranean Garden In Berkeley Designed By Garden Designer Brandon Tyson And Homeowner Amy Har Tropical Garden Design Mediterranean Garden Beautiful Gardens" src="https://i.pinimg.com/originals/85/d3/ab/85d3ababde038c92385235d1fa78d43d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4K78Y6hYJz7wmHKpnOQbhJVi-IFp1_xR5Zw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Some are also landscape architects a more formal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Here S Our Favorite 25 Design Ideas Of Small Backyards Small Backyard Landscaping Modern Garden Design Small Garden Design" src="https://i.pinimg.com/originals/b8/37/aa/b837aa6c473ab5b98358fa06dcabcf92.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPRW5uLnkyVYVKV-3vdh8wT-C6Ht6VSZ72Lg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Some are also landscape architects a more formal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Danish Garden Designer And Author Claus Dalby Tuin Ideeen Tuin Tuinieren" src="https://i.pinimg.com/originals/0f/5f/0e/0f5f0eed467eec48ac76dd4f96951399.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhyLBLP5zAc81rp1l1yfzpDuPOeJQkGnMI3w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Discover garden design ideas beautiful photos and how-to projects.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Pommagic On Garden Outdoor Space Terrace Garden Design Garden Design Plans Home Garden Design" src="https://i.pinimg.com/originals/95/9d/1f/959d1fe944e957589892208729e70d4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j2kFlzk2ZkcLNHBCRS7ytrJluuTaGc49ow';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>My formal architectural education also introduced me to the concept of the regulating line.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Garden Landscape Design Gardenlandscapedesignideas Back Garden Design English Garden Design Garden Design Plans" src="https://i.pinimg.com/originals/dc/36/25/dc36255fe6452f40c2cb0f5e41f43ca6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYaTP3aEORQ826k6mH8cJtzYH9q2Tasuvvow';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Located in a secluded section of the garden west of the Orangerie this bosquet was designed as an amphitheater that featured a cascade the only one surviving in the gardens of Versailles.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gorgeous Small Garden Landscaping Ideas On A Budget Trendhmdcr Modern Planting Modern Garden Design Contemporary Garden" src="https://i.pinimg.com/736x/4a/cc/69/4acc696005a26e6396cc7cb5cdc91216.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxVGrgtkk3Ww5J7p3WC4Lm3pkgBV_hSNhNRw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Garden Visualiser asks you to add a boundary to the garden such as fences walls or hedges.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Small Patio Garden Design Ideas Backyard Http Prohousedecor Info 35 Small Pat Small Backyard Landscaping Small Backyard Gardens Contemporary Garden Design" src="https://i.pinimg.com/originals/2d/03/78/2d03789eae78ceafeec99262e921d681.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmru0LaRhaDNtFd8NODNfbBaj3ui7hNN6wUg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>At Charlotte Rowe Garden Design we offer a full garden design service for clients whether it is small town garden or a larger landscape.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Landscape Design Ideas For A Creative Home Garden Home Design Lover Courtyard Gardens Design Water Features In The Garden Small Courtyard Gardens" src="https://i.pinimg.com/originals/8e/ab/ab/8eabab5427503e27fd336c78c5157efe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJLgjeGk7IWCnmyDiid9XfZ0dn0ATuYNM5aQ';" />
+        <small>Source: es.pinterest.com</small>
+                    <p>The Society of Garden Designers Whether you want to create a brand new garden or are simply looking for an inspired new planting scheme the Society of Garden Designers is here to help.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Creative Diy Garden Design For Small Gardens In 2021 Garden Design London Circular Garden Design Landscape Design" src="https://i.pinimg.com/originals/cc/63/70/cc637023d5af20018ad10bfcec97ffd7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjv1_Iy2G0JUFKBh4yjK0JEbZv7pds59tVsg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Garden design is the foundation of any great landscape.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Best Garden Designer In Australia Front Yard Landscaping Design Australian Garden Front Yard Landscaping" src="https://i.pinimg.com/originals/b4/8d/c2/b48dc258634a32067bc7ced9ab085264.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR439SLIoGJMPaVi9PrwQ7cZzbbrTaqPW-YpQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Since the studio was established in London in 2004 Charlotte Rowe Garden Design has designed over 250 landscape and garden design projects for clients in the UK and overseas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern Garden Design Designer West End Central London Modern Garden Design Modern Garden Small Garden Design" src="https://i.pinimg.com/originals/b0/1d/5f/b01d5f3d828c4afff5afc5cac200fc69.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0lrDmrj7BsHTvzZcPILgx9qtBOfchWUOzw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>For the Gartens new property von Gal drew a simple square and divided it into four quartersone for the house one for the orchard one for the kitchen and cutting garden and one for an open lawn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Landscaping Ideas For An L Shaped Garden Small Backyard Gardens Backyard Landscaping Outdoor Gardens" src="https://i.pinimg.com/originals/6e/fc/4c/6efc4cf409cdbae9e700bf8a980d8d93.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSwYLHgDHs4Ei_tuURwAZV-9yfXn5f0pmb9g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Our members are some of the leading names in the industry working across a range of projects from small courtyards and roof gardens to country estates and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern Garden Designs Simple Garden Designs Garden Landscape Design Garden Design Layout" src="https://i.pinimg.com/originals/a5/cd/c7/a5cdc721cfc7d27281d6886492348107.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLLkb4H9a91PW-0hpo0rZ2B918qQAj8CKXg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The Society of Garden Designers Whether you want to create a brand new garden or are simply looking for an inspired new planting scheme the Society of Garden Designers is here to help.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Auckland Landscape Designer Kirsten Sach Landscape Design Ltd Small Garden Landscape Tropical Landscaping Small Tropical Gardens" src="https://i.pinimg.com/originals/90/9a/66/909a6677cef5f10f864a8032ff01c58f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8UYBm8TcPsxU2T_YRiSyjB6UAUgwDqWbMA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A garden designer can do design-only work for their clients and work with a garden contractor to finish the job or complete the whole.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/kleiner-garten-pool-mit-gegenstromanlage.html"><i>&larr; kleiner garten pool mit gegenstromanlage</i></a>
+                                                                    
+                                        <a href="/kiwi-im-garten.html"><i>kiwi im garten &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  START (hidden counter) -->
+<a href="/" alt="counter statistics" target="_blank" >
+<img  src="//sstatic1.histats.com/0.gif?4474445&101" alt="counter statistics" border="0">
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

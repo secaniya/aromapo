@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Fenchel Im Garten
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "kuni"
+  },
+  "headline": "Fenchel Im Garten",
+  "datePublished": "2021-03-22",
+  "image": "https://i.pinimg.com/736x/26/54/c8/2654c8c4b77dfd0a39d980c0ec09a992.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Garten Dekor",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=fenchel+im+garten",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Fenchel Im Garten
+            </a>
+        </h1>
+        <p>
+                            Meine Webseite präsentiert eine reiche Aswahl von Inneneinrichtungen, modernen Häusern und Gebäuden, sowie die aktuellsten Ideen für interessante und festliche Wohndekoration.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '9842eab235f29e055f0637b3106c62c0',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://dadsimz.com/9842eab235f29e055f0637b3106c62c0/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Fenchel Im Garten</strong>. Große Pflanzen werden am besten mit Staben und Schnüren geschützt. Fenchel selbst zu pflanzen lohnt sich ungemein.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/73/18/67/7318676fe522e42d674abdd7428ae6e9.jpg" alt="Fennel Fenchel Hinojo Foeniculum Vulgare Fenchel Findet Daruber Hinaus Auch In Einigen Spirituosen Verwendung Ha Hinojo Hinojo Planta Foeniculum Vulgare" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-r2FbiZ3bmV-o5MNQ2Dsg7b_m68Eu3K93w';">
+        <figcaption>Fennel Fenchel Hinojo Foeniculum Vulgare Fenchel Findet Daruber Hinaus Auch In Einigen Spirituosen Verwendung Ha Hinojo Hinojo Planta Foeniculum Vulgare from br.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Ab Mitte April bis Mitte Juni werden sie in Keimschalen im Haus herangezogen. So bilden sich dann im Frühjahr neue Blätter. Oder reicht das.
+    </p>
+    <h3>So kannst du den Fenchel in deinem Garten zum Beispiel neben Gurken anbauen.</h3>
+    <p>Hier hast du beispielsweise auch die Möglichkeit den Fenchel mit anderem Gemüse zu kombinieren. Oder reicht das. Fenchel im Garten die richtige Pflege. Wir empfehlen dir das Anbauen des Fenchels im Garten.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Angehaufelter Knollenfenchel Garten Pflanzen Kleiner Garten Fenchel Anbauen" src="https://i.pinimg.com/originals/f7/58/4d/f7584dfd3cfcb042b0bc12e974ea5a22.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzV-RykIkaSlQwDsEEwru1nykDruVyl_zUQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fenchel anbauen - so pflanzt man dieses leckere Gemüse richtig an Wer Fenchel in seinem Garten anbauen will sollte beachten das die Heimat des Fenchels der Mittelmeerraum ist.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Selbst Im Garten Anbauen Fenchel Anbauen Anbau Fenchel" src="https://i.pinimg.com/564x/9e/32/0f/9e320f4539d16f15cffe2c632161ea77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3OowVs6VJ0UtsfP5-Yypc7y4lBkgANk5b4w';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Im Aussehen ähnelt Fenchel Dill nur sehr gut genährt aber der Geruch ist eher Anis was sehr viele nicht mögen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Healthy Fennel Recipes To Fuel Your Organs Fennel Recipes Fennel Healthy Herbs" src="https://i.pinimg.com/originals/38/a0/d9/38a0d96a62993ad8cca355c01ed435e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfWPKglDwyCKBfhdVG8VroM-3n8RFSxaj8Fg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Als Blattschmuckstaude mit großen Dolden mit lockerem durchscheinendem Wuchs kommt Fenchel besonders im sonnigen Staudenbeet gut zur Geltung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Garten Garden Sommer Gartenliebe Gardening Fenchel Garten Garden Sommer Gartenliebe Gard Sommerpflanzen Garten Blumen Fur Garten" src="https://i.pinimg.com/736x/26/54/c8/2654c8c4b77dfd0a39d980c0ec09a992.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGQsEzl8mfY3pmUgm9fNB3Vadlb8I9WxSVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gemeiner Fenchel Foeniculum vulgare - eine Staude und in unserer Gegend häufiger - ein zweijähriges Kraut das bis zu 2 Meter hoch von der Selleriefamilie ist und laut dem alten Regenschirm.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Gewurzfenchel Tee Wurz Und Heilkraut Fenchel Pflanzen Graser Im Garten" src="https://i.pinimg.com/originals/cb/f1/04/cbf104c9b3ecbdf232bdeda79b6fa70c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTl6uwWMFOMhQ00VWM-GUU1c5Jq8u4fIlEoA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Die Aussaat erfolgt im Freiland von April bis Ende Juni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Knollen Fenchel Pflanzen Pflanzen Gewachs Garten" src="https://i.pinimg.com/736x/3d/db/91/3ddb91dca422db3a3f4819fcb4c1f8d3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuOKSrzxkr2yjfyoSwukOaJejgGFuVzIfTkQ';" />
+        <small>Source: pl.pinterest.com</small>
+                    <p>Im Herbst sollte die Pflanze kurz über dem Boden zurückgeschnitten werden.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Regrowing Fenchel Aus Kuchenabfallen Frisches Gemuse Nachwachsen Lassen Fenchel Kuchenabfalle Gemusereste Regrowing Fensterbankgemuse Herbs Dill Food" src="https://i.pinimg.com/736x/88/66/ef/8866ef40867ad491a83be85482fec6e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJaqBX4WhheNwdGLZ43tlPxb2kuE9KMrys4Q';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Das Gemüse ist nicht nur gesund und vielseitig zuzubereiten sondern auch eine Bereicherung für Insekten und Vögel im Garten.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Krauterbeet Anlegen Standort Sortenwahl Anleitung Anlegen Anleitung Krauterbeet Sortenwahl Standort Herbs Perennials Low Maintenance Perennial Herbs" src="https://i.pinimg.com/originals/b1/7b/b8/b17bb8adfd2bcbb9d0ef50e6af22262b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGsADWA2dhhhnW2A9NmI66XRxUYLSmZSCiA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fenchel im Garten anbauen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="So Gelingt Der Anbau Von Fenchel Fenchel Anbauen Garten Selbstversorger Breathes New Life Into Packaging Waste Why No In 2020 Plants Garden Care Seasonal Garden" src="https://i.pinimg.com/originals/af/42/32/af4232b399feebde725c8fdccca7ca90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijhQ8uSF-9TvKazRY4vKQqphlF2DR_zD5uA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>So kannst du den Fenchel in deinem Garten zum Beispiel neben Gurken anbauen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Schwertlilien Gracillimus Fenchel Katzenminze Und Noch Mehr Im Steppengarten Garten Pflanzen Garten Terrasse" src="https://i.pinimg.com/originals/e3/87/3c/e3873c5badb6dc248270bf4069e54265.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTG8BJF4sUTCn9cVcfSeKsvRPWDZd6Mf7F3g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fenchel im Garten die richtige Pflege.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Auf Project Plant Edibleweedwildornamental" src="https://i.pinimg.com/originals/e2/61/46/e261464072eb0650e26975efc086b677.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVHnXYWKLRADpgG01Sv7MNhdUpHicwO38aA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wenn Sie auf den Geschmack gekommen sind und Fenchel selbst anbauen möchten dann müssen Sie dazu keinen großen Aufwand betreiben.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Zb Gedunstet Einfach Lecker Garten Garden Nature Sommer Natur Gartenliebe Gardening Flowers Blumen Gartenideen Su Cactus Plants Plants" src="https://i.pinimg.com/originals/0b/14/bd/0b14bdf22231a1e2d75c0f5553719b38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsTFv66973ItvzF0qO_LjCKMmG_YugpBkNQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wenn Sie auf den Geschmack gekommen sind und Fenchel selbst anbauen möchten dann müssen Sie dazu keinen großen Aufwand betreiben.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wie Pflegt Man Fenchel Tipps Pflanzen Tipps Und Tricks" src="https://i.pinimg.com/originals/d8/b7/d1/d8b7d12d09774079c3bbfc7dbd406be6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbzcggei54boBYfYg5RVXmvvY2d9atescDw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hallo ihr lieben das interessiert mich jetzt auch mal ich habe fenchel im garten wahrscheinlich ist es teefenchel keine knolle weit und breit und die pflanze sollte 2 m hoch werden.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ursula Schorverth Auf Instagram Zuerst Wollte Ich Den Frisch Geernteten Fenchel Aus Dem Kuchengarten Mit Dem Anderen Gemuse Fenchel Gemuse Anbauen Puffbohne" src="https://i.pinimg.com/originals/de/41/2d/de412d9b14d0e3e2e9c66e8d1391053e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD7KTDfZuKA_SqwT_mtMWq34xVBihKjJ4toA';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>So bilden sich dann im Frühjahr neue Blätter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Katzenminze Schwertlilien Graser Fenchel Garten Pflanzen Garten Ideen" src="https://i.pinimg.com/originals/03/3f/5e/033f5e8525cf3c060c47f04b8db57341.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST0W2BgFo7i7oQW-NitwXM7eiHgJ5lqLr6qg';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Es ist nicht schwierig Jungpflanzen selbst vorzuziehen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fennel Fenchel Hinojo Foeniculum Vulgare Fenchel Findet Daruber Hinaus Auch In Einigen Spirituosen Verwendung Ha Hinojo Hinojo Planta Foeniculum Vulgare" src="https://i.pinimg.com/originals/73/18/67/7318676fe522e42d674abdd7428ae6e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-r2FbiZ3bmV-o5MNQ2Dsg7b_m68Eu3K93w';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Diese Sorten bereits im Frühling aussäen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Gewurzfenchel Tee Wurz Und Heilkraut Fenchel Pflanzen Fenchelkraut" src="https://i.pinimg.com/originals/2d/09/f2/2d09f264a35335cc434b1cc18fca7cb0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iewc3t5pWHldCX2lbW0JQh_YycnDD7D1sw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Die Vorkultur im Zimmer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Anbauen Im Garten Gewurzfenchel Oder Knollenfenchel Fenchel Anbauen Fenchel Gemuse Pflanzen" src="https://i.pinimg.com/736x/22/8d/66/228d66b69e42fd1a66b5690017260371.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRedeXBBUYW5QzC_BPoWP0q5_DN_AVaUguVPQ';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Ab Mitte April bis Mitte Juni werden sie in Keimschalen im Haus herangezogen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fenchel Anbauen Im Garten Gewurzfenchel Oder Knollenfenchel Gruneliebe Fenchel Anbauen Pflanzen Fenchel" src="https://i.pinimg.com/originals/7d/05/05/7d050584ad01bf1620c3000ddcd7f68c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXBQFGLN-Lm6usJVmxvfc7ZMenbagGPeWDQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fenchel anbauen - so pflanzt man dieses leckere Gemüse richtig an Wer Fenchel in seinem Garten anbauen will sollte beachten das die Heimat des Fenchels der Mittelmeerraum ist.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Growing Sellery Sellerie Ziehen Garten Garten Pflanzen" src="https://i.pinimg.com/originals/47/88/10/478810a87fd4426262d84cc9b2e48a2d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm1zcioa4L06th7G3hHBPWvx6v3sGmIIj0vg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Die Temperatur während der Keimzeit sollte zwischen 20 und 22C liegen nach der Keimphase nicht über 16C um zu vermeiden dass die.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/eichelhaeher-im-garten.html"><i>&larr; eichelhaeher im garten</i></a>
+                                                                    
+                                        <a href="/edelsplitt-garten.html"><i>edelsplitt garten &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  START (hidden counter) -->
+<a href="/" alt="counter statistics" target="_blank" >
+<img  src="//sstatic1.histats.com/0.gif?4474445&101" alt="counter statistics" border="0">
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
